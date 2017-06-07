@@ -1,0 +1,31 @@
+/* UNIVERSAL */
+html {
+  font-size: 16px;
+}
+
+
+
+/* HEADER */
+header .nav-container {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  height: 4rem;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
