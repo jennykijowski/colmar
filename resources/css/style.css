@@ -1,8 +1,16 @@
 /* UNIVERSAL */
 html {
   font-size: 16px;
-  font-family: "Verdana", sans-serif;
+  font-family: "Lato", sans-serif;
 }
+
+.nav-container,
+.banner-container,
+main,
+footer {
+    font-family: "Lato", sans-serif;
+}
+
 
 /* HEADER */
 header .nav-container {
@@ -122,3 +130,45 @@ main .menu-item img {
 }
 
 /* MAIN--middle */
+main .start-learning-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #F3F5F5;
+}
+
+main .start-learning-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .curriculum-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  width: 80%;
+  background-color: lightyellow;
+}
+
+main .curriculum-subject {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  overflow: hidden;
+}
+
+main .curriculum-subject img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main .curriculum-subject .text-container {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
