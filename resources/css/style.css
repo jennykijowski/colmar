@@ -3,8 +3,6 @@ html {
   font-size: 16px;
 }
 
-
-
 /* HEADER */
 header .nav-container {
   background-color: white;
@@ -28,4 +26,29 @@ header nav ul {
 
 header nav ul li {
   margin-left: 1rem;
+}
+
+/* BANNER */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F3F5F5;
+}
+
+.large-image-container img {
+  width: 60%;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+}
+
+.banner-text-container {
+  background-color: white;
+  line-height: 1.5;
+}
+
+.banner-text-container .button {
+  color: white;
+  background-color: darkgrey;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
