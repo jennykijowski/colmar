@@ -1,6 +1,7 @@
 /* UNIVERSAL */
 html {
   font-size: 16px;
+  font-family: "Verdana", sans-serif;
 }
 
 /* HEADER */
@@ -31,14 +32,23 @@ header nav ul li {
 /* BANNER */
 .banner-container {
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
   align-items: center;
   background-color: #F3F5F5;
 }
 
-.large-image-container img {
+.large-image-container {
+  background-color: lightblue;
   width: 60%;
+  overflow: hidden;
+}
+
+.large-image-container img {
   margin: 2rem 2.5rem 2rem 1.5rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .banner-text-container {
@@ -51,4 +61,62 @@ header nav ul li {
   background-color: darkgrey;
   padding-top: .5rem;
   padding-bottom: .5rem;
+}
+
+/* MAIN--top */
+main .basic-info-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .main-left-container {
+  background-color: lightblue;
+  width: 60%;
+  overflow: hidden;
+}
+
+main .main-left-container img {
+  margin: 2rem 1.5rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main .main-left-container .text-container {
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+main .main-left-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+main .main-left-container .quote,
+main .main-left-container .quote-citation {
+  display: block;
+}
+
+main .main-right-container {
+  width: 26.5rem;
+  border-left: lightgrey solid 1px;
+  background-color: lightyellow;
+}
+
+main .main-right-container .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-right-container .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .menu-item img {
+  width: 35%;
+  margin: 1rem 1rem;
 }
