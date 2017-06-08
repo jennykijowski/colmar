@@ -4,7 +4,7 @@ html {
   font-family: "Lato", sans-serif;
 }
 
-.nav-container,
+header,
 .banner-container,
 main,
 footer {
@@ -194,4 +194,9 @@ main .main-left-container video {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* FOOTER */
+footer {
+  border-top: lightgrey solid 1px;
 }
