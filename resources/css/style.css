@@ -4,11 +4,12 @@ html {
   font-family: "Lato", sans-serif;
 }
 
-header,
+.nav-container,
 .banner-container,
 main,
-footer {
+.footer-container {
   font-family: "Lato", sans-serif;
+  color: #494949;
 }
 
 
@@ -28,6 +29,19 @@ header .logo-container {
   align-items: center;
 }
 
+header .colmar,
+header .academy {
+  font-size: 1.15rem;
+}
+
+header .colmar {
+  font-weight: bold;
+}
+
+header .academy {
+  font-weight: 100;
+}
+
 header nav ul {
   display: flex;
   align-items: center;
@@ -41,9 +55,11 @@ header nav ul li {
 .banner-container {
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: #F3F5F5;
+  background-color: #cccccc;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .large-image-container {
@@ -55,18 +71,40 @@ header nav ul li {
 .large-image-container img {
   margin: 2rem 2.5rem 2rem 1.5rem;
   max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 .banner-text-container {
   background-color: white;
   line-height: 1.5;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 30%;
+}
+
+.banner-text-container h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 1.25;
+}
+
+.banner-text-container h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
 }
 
 .banner-text-container .button {
   color: white;
-  background-color: darkgrey;
+  background-color: #494949;
+  display: block;
+  margin-top: 2rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.banner-text-container span {
+  text-align: center;
   padding-top: .5rem;
   padding-bottom: .5rem;
 }
@@ -136,7 +174,7 @@ main .start-learning-container {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  background-color: #F3F5F5;
+  background-color: #cccccc;
 }
 
 main .section-title {
@@ -197,11 +235,8 @@ main .main-left-container video {
 }
 
 /* FOOTER */
-footer {
 
-}
-
-.footer-container {
+footer .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
