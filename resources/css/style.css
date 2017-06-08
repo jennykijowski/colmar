@@ -17,6 +17,13 @@ main a {
   font-weight: lighter;
 }
 
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 .left-container {
   background-color: lightblue;
   width: 60%;
@@ -30,6 +37,26 @@ main a {
   max-width: 100%;
 }
 
+.left-container .text-container {
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  max-width: 100%;
+}
+
+.left-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.left-container .quote {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+
 .right-container {
   background-color: lightyellow;
   line-height: 1.5;
@@ -40,11 +67,30 @@ main a {
   width: 30%;
 }
 
-.section-title {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  font-weight: bold;
+.right-container .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-container .menu-item {
+  display: flex;
+  align-items: center;
+  border-bottom: lightgrey solid 1px;
+}
+
+.right-container .menu-item img {
+  width: 35%;
+  margin: 1rem 1rem;
+}
+
+.right-container .menu-item h4 {
+  font-size: 1.15rem;
+}
+
+.right-container .menu-item h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+  padding-bottom: 1.15rem;
 }
 
 /* HEADER */
@@ -139,26 +185,6 @@ header nav ul li {
     border-right: lightgrey solid 1px;
   }
 
-.basic-info-container .left-container .text-container {
-  margin-bottom: 2rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  max-width: 100%;
-}
-
-.basic-info-container .left-container h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.basic-info-container .left-container .quote {
-  font-size: 1rem;
-  font-weight: lighter;
-  line-height: 1.5;
-  padding-bottom: 1.5rem;
-}
-
 .basic-info-container .left-container .quote-citation {
   font-size: .75rem;
   line-height: 1.5;
@@ -167,32 +193,6 @@ header nav ul li {
 .basic-info-container .left-container .quote,
 .basic-info-container .left-container .quote-citation {
   display: block;
-}
-
-.basic-info-container .right-container .menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.basic-info-container .right-container .menu-item {
-  display: flex;
-  align-items: center;
-  border-bottom: lightgrey solid 1px;
-}
-
-.basic-info-container .right-container .menu-item img {
-  width: 35%;
-  margin: 1rem 1rem;
-}
-
-.basic-info-container .right-container .menu-item h4 {
-  font-size: 1.15rem;
-}
-
-.basic-info-container .right-container .menu-item h5 {
-  font-size: 1rem;
-  font-weight: lighter;
-  padding-bottom: 1.15rem;
 }
 
 /* MAIN--middle */
@@ -256,22 +256,25 @@ header nav ul li {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  background-color: white;
 }
-.thesis-container {
+
+.thesis-exhibit-container .thesis-container {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  background-color: #cccccc;
   width: 100%;
   margin: 0 auto;
 }
 
-.left-container video {
-  margin: 2rem 1.5rem;
+.thesis-exhibit-container .left-container video {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
   max-width: 100%;
-  height: auto;
-  display: block;
 }
+
+
 
 /* FOOTER */
 
