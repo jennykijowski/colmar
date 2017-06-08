@@ -12,6 +12,11 @@ main,
   color: #494949;
 }
 
+main a {
+  color: #4580d8;
+  font-weight: lighter;
+}
+
 .left-container {
   background-color: lightblue;
   width: 60%;
@@ -33,6 +38,13 @@ main,
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 30%;
+}
+
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 /* HEADER */
@@ -113,7 +125,7 @@ header nav ul li {
 }
 
 /* MAIN--top */
-main .basic-info-container {
+.basic-info-container {
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -123,87 +135,79 @@ main .basic-info-container {
 
   /* (see universal section for left container styling) */
 
-main .basic-info-container .left-container {
+.basic-info-container .left-container {
     border-right: lightgrey solid 1px;
   }
 
-main .basic-info-container .left-container .text-container {
+.basic-info-container .left-container .text-container {
   margin-bottom: 2rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   max-width: 100%;
 }
 
-main .basic-info-container .left-container h2 {
+.basic-info-container .left-container h2 {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-main .basic-info-container .left-container .quote {
+.basic-info-container .left-container .quote {
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.5;
   padding-bottom: 1.5rem;
 }
 
-main .basic-info-container .left-container .quote-citation {
+.basic-info-container .left-container .quote-citation {
   font-size: .75rem;
   line-height: 1.5;
 }
 
-main .basic-info-container .left-container .quote,
-main .basic-info-container .left-container .quote-citation {
+.basic-info-container .left-container .quote,
+.basic-info-container .left-container .quote-citation {
   display: block;
 }
 
-main .basic-info-container .right-container .menu {
+.basic-info-container .right-container .menu {
   display: flex;
   flex-direction: column;
 }
 
-main .basic-info-container .right-container .menu-item {
+.basic-info-container .right-container .menu-item {
   display: flex;
   align-items: center;
   border-bottom: lightgrey solid 1px;
 }
 
-main .basic-info-container .right-container .menu-item img {
+.basic-info-container .right-container .menu-item img {
   width: 35%;
   margin: 1rem 1rem;
 }
 
-main .basic-info-container .right-container .menu-item h4 {
+.basic-info-container .right-container .menu-item h4 {
   font-size: 1.15rem;
 }
 
-main .basic-info-container .right-container .menu-item h5 {
+.basic-info-container .right-container .menu-item h5 {
   font-size: 1rem;
   font-weight: lighter;
   padding-bottom: 1.15rem;
 }
 
-main .right-container a {
-  color: #4580d8;
-  font-weight: lighter;
-}
-
 /* MAIN--middle */
-main .start-learning-container {
+.start-learning-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
   background-color: #cccccc;
+  width: 100%;
+  margin: 0 auto;
 }
 
-main .section-title {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-main .curriculum-container {
+.start-learning-container .curriculum-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -213,35 +217,47 @@ main .curriculum-container {
   background-color: lightyellow;
 }
 
-main .curriculum-subject {
+.start-learning-container .curriculum-subject {
   display: flex;
   flex-direction: column;
   width: 30%;
   overflow: hidden;
   background-color: white;
+  margin-bottom: 1.5rem;
 }
 
-main .curriculum-subject img {
+.start-learning-container .curriculum-subject img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-main .curriculum-subject .text-container {
+.start-learning-container .curriculum-subject .text-container {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.start-learning-container .curriculum-subject .text-container h4 {
+  font-size: 1.15rem;
+  padding-bottom: 1rem;
+}
+
+.start-learning-container .curriculum-subject .text-container h5 {
+  font-size: 1rem;
+  font-weight: lighter;
 }
 
 /* MAIN--bottom */
-main .thesis-exhibit-container {
+.thesis-exhibit-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
 }
-main .thesis-container {
+.thesis-container {
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -250,7 +266,7 @@ main .thesis-container {
   margin: 0 auto;
 }
 
-main .left-container video {
+.left-container video {
   margin: 2rem 1.5rem;
   max-width: 100%;
   height: auto;
