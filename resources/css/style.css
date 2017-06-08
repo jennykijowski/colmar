@@ -8,7 +8,7 @@ header,
 .banner-container,
 main,
 footer {
-    font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 
@@ -198,5 +198,24 @@ main .main-left-container video {
 
 /* FOOTER */
 footer {
+
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-top: lightgrey solid 1px;
+  height: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+}
+
+footer nav ul li {
+  margin-left: 1rem;
 }
