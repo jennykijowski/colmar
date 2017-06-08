@@ -12,6 +12,28 @@ main,
   color: #494949;
 }
 
+.left-container {
+  background-color: lightblue;
+  width: 60%;
+  overflow: hidden;
+}
+
+.left-container img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+  max-width: 100%;
+}
+
+.right-container {
+  background-color: lightyellow;
+  line-height: 1.5;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 30%;
+}
 
 /* HEADER */
 header .nav-container {
@@ -55,46 +77,27 @@ header nav ul li {
 .banner-container {
   display: flex;
   flex-grow: 1;
-  justify-content: space-around;
   align-items: center;
   background-color: #cccccc;
   width: 100%;
   margin: 0 auto;
 }
 
-.large-image-container {
-  background-color: lightblue;
-  width: 60%;
-  overflow: hidden;
-}
+/* see universal section for "left-container" styling */
+/* see universal section for "right-container" styling */
 
-.large-image-container img {
-  margin: 2rem 2.5rem 2rem 1.5rem;
-  max-width: 100%;
-}
-
-.banner-text-container {
-  background-color: white;
-  line-height: 1.5;
-  padding-left: 2rem;
-  padding-right: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 30%;
-}
-
-.banner-text-container h1 {
+.banner-container .right-container h1 {
   font-size: 3rem;
   font-weight: bolder;
   line-height: 1.25;
 }
 
-.banner-text-container h3 {
-  font-size: 1.25rem;
+.banner-container .right-container h3 {
+  font-size: 1.15rem;
   margin-top: 2rem;
 }
 
-.banner-text-container .button {
+.banner-container .right-container .button {
   color: white;
   background-color: #494949;
   display: block;
@@ -103,7 +106,7 @@ header nav ul li {
   letter-spacing: 1px;
 }
 
-.banner-text-container span {
+.banner-container .right-container span {
   text-align: center;
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -114,57 +117,75 @@ main .basic-info-container {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  justify-content: space-between;
-}
-
-main .main-left-container {
-  background-color: lightblue;
-  width: 60%;
-  overflow: hidden;
-}
-
-main .main-left-container img {
-  margin: 2rem 1.5rem;
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-main .main-left-container .text-container {
   width: 100%;
+  margin: 0 auto;
+}
+
+  /* (see universal section for left container styling) */
+
+main .basic-info-container .left-container {
+    border-right: lightgrey solid 1px;
+  }
+
+main .basic-info-container .left-container .text-container {
+  margin-bottom: 2rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  max-width: 100%;
 }
 
-main .main-left-container h2 {
+main .basic-info-container .left-container h2 {
   margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-main .main-left-container .quote,
-main .main-left-container .quote-citation {
+main .basic-info-container .left-container .quote {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+
+main .basic-info-container .left-container .quote-citation {
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+main .basic-info-container .left-container .quote,
+main .basic-info-container .left-container .quote-citation {
   display: block;
 }
 
-main .main-right-container {
-  width: 26.5rem;
-  border-left: lightgrey solid 1px;
-  background-color: lightyellow;
-}
-
-main .main-right-container .menu {
+main .basic-info-container .right-container .menu {
   display: flex;
   flex-direction: column;
 }
 
-main .main-right-container .menu-item {
+main .basic-info-container .right-container .menu-item {
   display: flex;
-  justify-content: center;
   align-items: center;
+  border-bottom: lightgrey solid 1px;
 }
 
-main .menu-item img {
+main .basic-info-container .right-container .menu-item img {
   width: 35%;
   margin: 1rem 1rem;
+}
+
+main .basic-info-container .right-container .menu-item h4 {
+  font-size: 1.15rem;
+}
+
+main .basic-info-container .right-container .menu-item h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+  padding-bottom: 1.15rem;
+}
+
+main .right-container a {
+  color: #4580d8;
+  font-weight: lighter;
 }
 
 /* MAIN--middle */
@@ -222,12 +243,14 @@ main .thesis-exhibit-container {
 }
 main .thesis-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-grow: 1;
+  background-color: #cccccc;
+  width: 100%;
+  margin: 0 auto;
 }
 
-main .main-left-container video {
+main .left-container video {
   margin: 2rem 1.5rem;
   max-width: 100%;
   height: auto;
