@@ -139,7 +139,7 @@ main .start-learning-container {
   background-color: #F3F5F5;
 }
 
-main .start-learning-title {
+main .section-title {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -159,6 +159,7 @@ main .curriculum-subject {
   flex-direction: column;
   width: 30%;
   overflow: hidden;
+  background-color: white;
 }
 
 main .curriculum-subject img {
@@ -171,4 +172,26 @@ main .curriculum-subject .text-container {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
+}
+
+/* MAIN--bottom */
+main .thesis-exhibit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+main .thesis-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+main .main-left-container video {
+  margin: 2rem 1.5rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
