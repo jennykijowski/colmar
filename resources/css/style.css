@@ -192,6 +192,35 @@ header .nav-container-mobile {
   padding-bottom: .5rem;
 }
 
+/* MOBILE BANNER */
+@media only screen and (max-width: 470px){
+  .banner-container {
+    background-color: #494949;
+    flex-direction: column;
+  }
+
+  .banner-container img {
+    display: none;
+  }
+
+  .banner-container .right-container {
+    background-color: #cccccc;
+    margin-top: 11.25rem;
+    display: block;
+    width: 100%;
+  }
+
+  .banner-container .right-container h1,
+  .banner-container .right-container h3 {
+    padding-left: 2rem;
+  }
+
+  .banner-container .right-container .button {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
 /* MAIN--top */
 .basic-info-container {
   display: flex;
