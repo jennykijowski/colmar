@@ -25,7 +25,7 @@ main a {
 }
 
 .left-container {
-  background-color: lightblue;
+  /*background-color: lightblue;*/
   width: 60%;
   overflow: hidden;
 }
@@ -58,7 +58,7 @@ main a {
 }
 
 .right-container {
-  background-color: lightyellow;
+  /*background-color: lightyellow;*/
   line-height: 1.5;
   padding-left: 2rem;
   padding-right: 3rem;
@@ -76,6 +76,7 @@ main a {
   display: flex;
   align-items: center;
   border-bottom: lightgrey solid 1px;
+  border-top: lightgrey solid 1px;
 }
 
 .right-container .menu-item img {
@@ -131,6 +132,27 @@ header nav ul li {
   margin-left: 1rem;
 }
 
+header .nav-container-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+
+/* DESKTOP HEADER */
+@media only screen and (min-width: 470px){
+  header .nav-container-mobile {
+    display: none;
+  }
+}
+
+/* MOBILE HEADER */
+@media only screen and (max-width: 470px){
+  header .nav-container {
+    display: none;
+  }
+}
+
 /* BANNER */
 .banner-container {
   display: flex;
@@ -174,7 +196,7 @@ header nav ul li {
 .basic-info-container {
   display: flex;
   flex-grow: 1;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   margin: 0 auto;
 }
@@ -214,7 +236,7 @@ header nav ul li {
   justify-content: space-around;
   margin-bottom: 2rem;
   width: 80%;
-  background-color: lightyellow;
+  /*background-color: lightyellow;*/
 }
 
 .start-learning-container .curriculum-subject {
@@ -261,7 +283,7 @@ header nav ul li {
 
 .thesis-exhibit-container .thesis-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-grow: 1;
   width: 100%;
   margin: 0 auto;
@@ -286,6 +308,8 @@ footer .footer-container {
   height: 5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  font-size: .75rem;
+  font-weight: lighter;
 }
 
 footer nav ul {
