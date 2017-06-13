@@ -70,6 +70,11 @@ main a {
 .right-container .menu {
   display: flex;
   flex-direction: column;
+
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+
 }
 
 .right-container .menu-item {
@@ -246,6 +251,43 @@ header .nav-container-mobile {
   display: block;
 }
 
+/* (see universal section for right container styling) */
+
+/* MOBILE MAIN TOP */
+@media only screen and (max-width: 470px){
+  .basic-info-container .left-container {
+    display: none;
+  }
+  .basic-info-container .right-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+  .right-container .menu .menu-item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-bottom: hidden;
+    border-top: hidden;
+    max-width: 100%;
+  }
+
+  .right-container .menu-item img {
+    width: 100%;
+    display: block;
+  }
+
+  .right-container .menu-item .text-container {
+    text-align: left;
+    padding-left: 1rem;
+    width: 100%;
+  }
+}
+
 /* MAIN--middle */
 .start-learning-container {
   display: flex;
@@ -298,6 +340,61 @@ header .nav-container-mobile {
 .start-learning-container .curriculum-subject .text-container h5 {
   font-size: 1rem;
   font-weight: lighter;
+}
+
+/* MOBILE MAIN MIDDLE */
+@media only screen and (max-width: 470px){
+  .start-learning-container {
+    background-color: white;
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+  }
+
+  .start-learning-container .curriculum-container {
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+
+    /* desktop styling--
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    width: 80%;
+    */
+  }
+
+  .start-learning-container .curriculum-subject {
+    display: block;
+    width: 100%;
+    background-color: #cccccc;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+
+  .start-learning-container .curriculum-subject .text-container {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .start-learning-container .curriculum-subject .text-container h4 {
+      padding-bottom: 0rem;
+  }
+
+  .start-learning-container .curriculum-subject .text-container h5 {
+    display: none;
+  }
+
+  .start-learning-container .curriculum-container .curriculum-subject img {
+    display: none;
+  }
 }
 
 /* MAIN--bottom */
