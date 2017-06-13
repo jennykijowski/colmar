@@ -422,6 +422,27 @@ header .nav-container-mobile {
   max-width: 100%;
 }
 
+/* MOBILE MAIN BOTTOM */
+@media only screen and (max-width: 470px){
+  .thesis-exhibit-container .thesis-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .thesis-exhibit-container .thesis-container .right-container {
+    display: none;
+  }
+
+  .thesis-exhibit-container .thesis-container .left-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .thesis-exhibit-container .thesis-container .left-container .text-container {
+    display: none;
+  }
+}
 
 
 /* FOOTER */
@@ -445,4 +466,11 @@ footer nav ul {
 
 footer nav ul li {
   margin-left: 1rem;
+}
+
+/* MOBILE FOOTER */
+@media only screen and (max-width: 470px){
+  footer nav {
+    display: none;
+  }
 }
